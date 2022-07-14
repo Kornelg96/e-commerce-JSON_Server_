@@ -1,0 +1,13 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server -p 3006 -w db.json"
+  },
+  "author": "KornelG",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
