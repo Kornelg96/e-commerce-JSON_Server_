@@ -66,6 +66,8 @@ const ImageContainer = styled.div`
 `;
 const Image = styled.img`
   height: 100%;
+  object-fit: cover;
+  width: 60%;
   @media ${device.tablet}{
 width: 95%;
 object-fit: cover;

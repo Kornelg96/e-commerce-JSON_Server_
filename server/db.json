@@ -1,11 +1,11 @@
 {
   "menuItemss": [
     {
-      "title": "MężczyznaJSON",
+      "title": "Mężczyzna",
       "path": "products/men",
       "submenu": [
         {
-          "title": "UbraniaJSON",
+          "title": "Ubrania",
           "path": "products/men/ubrania",
           "przyklad": [
             "Szorty",
@@ -47,11 +47,11 @@
       ]
     },
     {
-      "title": "KobietaJSON",
+      "title": "Kobieta",
       "path": "products/women",
       "submenu": [
         {
-          "title": "UbraniaJSON",
+          "title": "Ubrania",
           "path": "products/women/ubrania",
           "przyklad": [
             "Sukienki",
@@ -75,7 +75,7 @@
             "Stroje kąpielowe",
             "Czapki",
             "Okulary",
-            "PaskiJSON"
+            "Paski"
           ]
         },
         {
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "title": "DzieckoJSON",
+      "title": "Dziecko",
       "path": "products/kid",
       "submenu": [
         {
@@ -150,7 +150,7 @@
             "Bluzy",
             "Swetry",
             "Kurtki i płaszcze",
-            "KoszuleJSON"
+            "Koszule"
           ]
         }
       ]
