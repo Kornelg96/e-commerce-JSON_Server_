@@ -45,12 +45,6 @@ const Galerry = styled.div`
   margin-top: 35px;
   background: white;
   margin-right: 45px;
-  @media ${device.laptopM} {
-    min-height: 55vh;
-    max-height: 60vh;
-    min-width: 300px;
-    max-width: 320px;
-  }
   @media (max-width: 580px) {
     min-width: 100%;
     width: 100%;
@@ -65,9 +59,6 @@ const Subgalerry = styled.div`
   gap: 8px;
   margin-top: 5px;
   background-color: white;
-  @media ${device.laptopM} {
-    max-width: 320px;
-  }
   @media (max-width: 580px) {
     display: none;
   }
@@ -237,6 +228,11 @@ const OpisContinue = styled.div`
   }
 `;
 const KolorsWrapper = styled.div``;
+const ContainerImg = styled.div`
+max-width: 350px;
+height: 450px;
+
+`;
 
 const SingleProduct = () => {
   const location = useLocation();
@@ -362,21 +358,23 @@ const SingleProduct = () => {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <Img src={srcImage} />
+                  <Img src={srcImage} alt="Tu powinno pojawić się zdjęcie produktu" />
                 </SwiperSlide>
                 {products.subImg.map((img)=>(
                   <SwiperSlide>
-                    <Img src={img} onClick={handleSrc}/>
+                    <Img src={img} onClick={handleSrc} alt="Tu powinno pojawić się zdjęcie produktu"/>
                   </SwiperSlide>
                 ))}
               </Swiper>
             ) : (
-              <Img src={srcImage} />
+              <ContainerImg>
+                <Img src={srcImage} alt="Tu powinno pojawić się zdjęcie produktu"/>
+              </ContainerImg>
             )}
             <Subgalerry>
               <Img src={products.img} onClick={handleSrc} />
               {products.subImg.map((img)=>(
-                  <Img src={img} onClick={handleSrc}/>
+                  <Img src={img} onClick={handleSrc} alt="Tu powinno pojawić się zdjęcie produktu"/>
               ))}
             </Subgalerry>
           </Galerry>

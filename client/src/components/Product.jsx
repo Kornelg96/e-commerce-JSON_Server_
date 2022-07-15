@@ -182,7 +182,7 @@ const Product3 = ({ item }) => {
   return (
     <Container>
       <Wrapper>
-        <Image src={item.img} />
+        <Image src={item.img} alt="Tu powinno pojawić się zdjęcie produktu" />
         <Info>
           <Icon>
             <ShoppingCartOutlined onClick={handleCart} />
